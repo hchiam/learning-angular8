@@ -1,7 +1,7 @@
 {
-  "name": "learning-something",
+  "name": "learning-angular8",
   "version": "1.0.0",
-  "description": "Learning something",
+  "description": "Learning Angular 8",
   "main": "index.js",
   "scripts": {
     "start": "",

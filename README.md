@@ -1,7 +1,8 @@
-# Learning something
+# Learning Angular 8
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-Learning something
+DesignCourse tutorial I'm following: 
 
-[![Build Status](https://travis-ci.org/hchiam/learning-something.svg?branch=master)](https://travis-ci.org/hchiam/learning-something) [![Coverage Status](https://coveralls.io/repos/github/hchiam/learning-something/badge.svg?branch=master)](https://coveralls.io/github/hchiam/learning-something?branch=master)
+- <https://www.youtube.com/watch?v=_TLhUCjY9iA>
+- or <https://coursetro.com/posts/code/174/Angular-8-Tutorial-&-Crash-Course>
