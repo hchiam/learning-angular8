@@ -1,0 +1,34 @@
+<h1>Welcome!</h1>
+
+<div class="play-container"
+     [style.background-color]="clickCounter > 4 ? 'black' : 'transparent'"
+     [ngStyle]="{
+       'background-color': clickCounter > 4 ? 'black' : 'transparent',
+       'border': clickCounter > 4 ? '4px solid yellow' : '1px solid lightgrey'
+     }"
+     [class.active]="clickCounter > 4">
+  <p>Note: event binding use round brackets. For example: <code>(click)</code></p>
+  <p>Note: property bindings use square brackets. For example: <code>[style.some-css-property]="someCSSValue"</code>, <code>[ngStyle]="{{'{'}}'props':'values'{{'}'}}"</code>, <code>[class.active]="someBooleanExpression"</code>, and <code>[ngClass]="someFunction()"</code> or <code>[ngClass]="{{'{'}}'classnames':'booleanExpressions'{{'}'}}"</code></p>
+  <p>You've clicked <button (click)="countClick()" aria-label="this button to increment the counter">this</button> {{ clickCounter }} times. <span [ngClass]="setClasses()">Try clicking it more than 4 times. <ng-template [ngIf]="clickCounter > 4">✅ Done!</ng-template></span></p>
+</div>
+
+<div class="play-container">
+  <p>Note: using <code>[(ngModel)]="someProp"</code> <strong>two-way</strong> binding requires <code>FormsModule</code> set as a module import in <code>app.module.ts</code></p>
+  <p>
+    <input type="text" [(ngModel)]="name" aria-label="Example input showing two-way binding with matching text in the next paragraph">
+  </p>
+  <p>
+    <strong>You said: </strong> {{ name }}
+  </p>
+</div>
+
+<div class="play-container">
+  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+    <p>This is the template that shows when <code>[ngIf]="someBooleanExpression"</code> evaluates to <code>true</code>.</p>
+    <p>The click counter <strong>IS GREATER</strong> than 4.</p>
+  </ng-template>
+  <ng-template #none>
+    <p>This is the alternative template that shows with <code>[ngIfElse]="someIdentifier"</code>, which matches to <code>#someIdentifier</code>.</p>
+    <p>The click counter is <strong>NOT</strong> greater than 4.</p>
+  </ng-template>
+</div>

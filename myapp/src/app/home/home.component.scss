@@ -1,0 +1,29 @@
+button {
+  font-weight: bold;
+  font-size: large;
+  background: lightgrey;
+  border: none;
+  color: black;
+  padding: .3em .8em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.play-container {
+  padding: 3em;
+  border: 1px solid lightgrey;
+  margin-bottom: 1em;
+
+  input {
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+}
+
+.active {
+  background-color: red;
+}
+
+.notactive {
+  background-color: black;
+}

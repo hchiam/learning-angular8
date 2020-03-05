@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* automatically fills up a row */;
+  flex-wrap: wrap; /* to automatically create new rows */
+  /* to wrap columns instead: */
+  // flex-direction: column;
+  // height: 100vh;
+
+  li {
+    background: rgb(152, 154, 230);
+    padding: 1em;
+    margin-right: 10px;
+    width: 20%;
+    height: 200px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column; /* to make the text items inside go top to bottom */
+
+    p {
+      margin: 0;
+    }
+
+    p.name {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    p.country {
+      text-transform: uppercase;
+      font-size: .9rem;
+      flex-grow: 1; /* to push the site link to the bottom each time */
+    }
+  }
+}
